@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Desktop/Script pr"
+		},
+		{
+			"path": "../Desktop/MyScriptPr "
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Script pr"
+	}
+}

@@ -1,0 +1,355 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    /* background-color: hsla(297, 60%, 69%, 0.3); */
+    background-color:#060c21;
+    /* height:100vh; not using*/
+    color:black;
+    font-size: medium;
+    /* width: 100%;  */
+    /* padding: 1em; */
+    
+}
+@font-face {
+    font-family: type2;
+    src: url('../fonts/type2.ttf');   
+}
+
+h1{
+    font-family:type2;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 1em 0;
+    text-shadow: 2px 2px 4px blue;
+
+}
+
+header{
+    margin-top:0;
+    display: flow-root;
+}
+
+/*********************************/
+/*same from main css*/
+header>div>ul{
+    float:right;
+    list-style-type: none; 
+    margin:10px 0px; 
+}
+
+header>div>ul li{
+    display: inline-block; 
+    margin:0 1em 0 0;
+    border-right:1px dashed #fff ;
+    border-left:1px dashed #fff;
+}
+
+header>div>ul li a{
+    font-size: 1em;
+    color:#fff;
+    text-decoration: none;
+    padding:0.3em 1em;/* top-bottom  left-right*/  /*1em =1*16px(medium "font-size:" of previous block)*/
+    transition: 0.5s ease;
+}
+header>div>ul li a:hover{
+    /* rgb(197, 191, 191); */
+    background-color: #fff ;
+    color: #000;
+    border-radius: 15px;
+
+} 
+header>div>ul>li:hover,header>div>ul li.active{
+    border-color: transparent;
+}
+header>div>ul li.active a{
+    background-color: #fff ;
+    color: #000;
+    border-radius: 15px;
+}
+
+
+i{
+    /* color: #fff; */
+    font-size: 1em;
+
+}
+
+i::before{
+    letter-spacing: 0.5em;
+}
+/****************************/
+/******************************/
+/************form******************/
+/******************************/
+
+
+.login-box{
+    width: 80%;
+    padding: 2em;
+    margin: 10px auto;
+    border-left: 5px groove maroon;
+    border-right: 5px groove maroon;
+    border-radius: 50px;
+}
+
+.login-box>h2{
+    width: 50%;
+    /* border: 1px dashed red; */
+    /* padding: 1em 0.5em; */
+    border-bottom: 2px solid yellow;
+    margin:10px auto;
+    font-size: 2em;
+    color:#fff;
+    text-align: center;
+}
+
+form,.social{
+    width: 50%;
+    /* border: 2px dashed white; */
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow;
+    padding: 1em 0.5em;
+    margin:10px auto;
+    border-radius: 20px;
+}
+
+
+form:focus-within{
+    background-color: hsla(174, 100%, 50%, 0.1);
+    
+}
+
+.input-class{
+    /* width: 80%; */
+    /* border: 2px dashed gold; */
+    padding: 1em 0.5em;
+    /* margin:5px auto; */
+    text-align: center;
+}
+.input-class label{
+
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]{
+    width: 60%;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+    
+
+}
+input:not([type="submit"]){
+    width: 80%;
+    height: 35px;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 1em;
+    border-radius: 20px;
+    border: transparent;
+
+}
+input:not([type="submit"]):focus{
+    background-color: hsl(0, 0%, 94%);  
+
+}
+[type="submit"]:hover{
+    box-shadow: inset -2px -2px 20px blueviolet,inset 2px 2px 20px blueviolet;
+}
+
+.forgot{
+    width: 80%;
+    /* border: 2px dashed white; */
+    margin:10px auto;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+a[href="#"]{
+    text-decoration: none;
+    margin-left: 1em;
+    color: purple;
+}
+a[href="#"]:visited{
+    color: blue;
+}
+a[href="#"]:hover{
+    color: yellowgreen;
+}
+a[href="#"]:active{
+    color: red;
+}
+
+
+a[href^="https://"]:link{
+    text-decoration: none;
+    color: purple;
+}
+a[href^="https://"]:visited{
+    color: #fff;
+}
+a[href^="https://"]:hover{
+    color: yellowgreen;
+}
+a[href^="https://"]:active{
+    color: red;
+}
+
+
+
+
+
+
+.forgot+p,p{
+    width: 80%;
+    margin:5px auto;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+
+}
+.wechat,.qq,.fb,.twitter{
+    width: 20%;
+    border: 2px dashed gold;
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+
+}
+/*************icons**************/
+.wechat>p>i{
+    color: green;
+    font-size: 1em;
+}
+
+.qq>p>i{
+    color:#fff;
+    font-size: 1em;
+}
+
+.fb>p>i{
+    color:darkblue;
+    font-size: 1em;
+}
+
+.twitter>p>i{
+    color: turquoise;
+    font-size: 1em;
+}
+
+.social>div>p>i::before{
+    letter-spacing: 1em;
+
+}
+.social>div:hover{
+    cursor: pointer;
+    border-color: lawngreen;
+}
+/**********************************************/
+/****************FOOTER**********************/
+/**********************************************/
+footer{
+    border-top: 1px solid hsl(0, 100%, 25%);
+    border-bottom: 1px solid hsl(0, 100%, 25%);
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+footer>ul,footer>address{
+    width: 95%;
+    padding: 0.5em;
+    /* border: 1px dashed blue; */
+    margin: 0.5em auto;
+}
+
+address>ul{
+    width: 100%;
+    /* border: 1px dashed green; */
+    margin: 0.5em auto;
+
+}
+
+footer>ul>li{
+    list-style: none;
+    width: 20%;
+    /* padding: 0.5em; */
+    /* border: 1px dashed red; */
+    display: inline-block;
+    text-align: center;
+
+}
+
+footer>ul>li>a:hover{
+    color: red;
+}
+
+address>ul>li{
+    list-style: none;
+    width: 15%;
+    padding:0.5em;
+    /* border: 1px dashed red; */
+    /* margin-left: 1em; */
+    display: inline-block;
+    text-align: center;
+}
+
+address>ul>li>p:hover{
+    cursor: pointer;
+}
+
+
+footer>ul,address>ul,address+p{
+    text-align: center;
+
+}
+
+footer>address+p{
+    position: absolute;
+    text-align: left;
+    width: 30%;
+    bottom:2px;
+    left: 2px;
+}
+
+
+footer>p:last-child{
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    bottom:2px;
+    right: 2px;
+    border-radius: 10px;
+    background-color: grey;
+    color: #000;
+    
+}
+
+i::before{
+    letter-spacing: 0.5em;
+}
+
+/****icons****/
+address>ul>li>p>i{
+    color: #fff;
+    font-size: 1em;
+}
+address>ul>li>p>i::before{
+    letter-spacing: 0.5em;
+}
